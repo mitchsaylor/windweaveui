@@ -1,0 +1,154 @@
+@theme {
+	--text-3xs: 68%;
+	--text-3xs--line-height: 1.5rem;
+	--text-2xs: 74%;
+	--text-2xs--line-height: 0.95rem;
+	--text-xs: 83%;
+	--text-xs--line-height: 1.1rem;
+	--text-sm: 87.5%;
+	--text-sm--line-height: 1.2rem;
+	--text-md: 94%;
+	--text-md--line-height: 1.3rem;
+	--text-base: 100%;
+	--text-base--line-height: 1.4rem;
+	--text-lg: 112.5%;
+	--text-lg--line-height: 1.5rem;
+	--text-xl: 125%;
+	--text-xl--line-height: 1.5rem;
+	--text-2xl: 150%;
+	--text-2xl--line-height: 1.6rem;
+	--text-3xl: 187.5%;
+	--text-3xl--line-height: 2.1rem;
+	--text-4xl: 225%;
+	--text-4xl--line-height: 2.4rem;
+	--text-5xl: 300%;
+	--text-5xl--line-height: 1;
+	--text-6xl: 375%;
+	--text-6xl--line-height: 1;
+	--text-7xl: 450%;
+	--text-7xl--line-height: 1;
+
+	--color-error: oklch(0.58 0.26 29);
+	--color-success: oklch(0.55 0.2 140);
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+	display: none;
+}
+.scrollbar-hidden {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.inputarrows-hidden {
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	input[type='number'] {
+		-moz-appearance: textfield;
+		appearance: textfield;
+	}
+}
+
+.loading-ring {
+	--uib-speed: 2s;
+	vertical-align: middle;
+	transform-origin: center;
+	animation: loading-ring-rotate var(--uib-speed) linear infinite;
+}
+.loading-ring circle {
+	fill: none;
+	stroke-dasharray: 1, 200;
+	stroke-dashoffset: 0;
+	stroke-linecap: round;
+	animation: loading-ring-stretch calc(var(--uib-speed) * 0.75) ease-in-out infinite;
+}
+@keyframes loading-ring-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes loading-ring-stretch {
+	0% {
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 90, 200;
+		stroke-dashoffset: -35px;
+	}
+	100% {
+		stroke-dashoffset: -124px;
+	}
+}
+
+.html-md h2 {
+	@apply mt-6 mb-2 text-xl font-semibold sm:text-2xl;
+}
+.html-md h3 {
+	@apply mt-3 mb-1.5 text-lg font-medium sm:text-xl;
+}
+.html-md h4 {
+	@apply mt-3 mb-1.5 text-base font-medium sm:text-lg;
+}
+
+.html-lg p,
+.html-md p {
+	@apply mb-3.5 text-sm leading-[1.55rem] sm:text-[95%];
+}
+.html-lg blockquote,
+.html-md blockquote {
+	@apply border-l-2 border-black/15 pl-6;
+}
+.html-lg ul,
+.html-md ul {
+	@apply mb-3.5 list-inside list-disc pl-3 text-sm leading-[1.55rem] sm:text-[95%];
+}
+.html-lg ol,
+.html-md ol {
+	@apply mb-3.5 list-inside list-decimal pl-3 text-sm leading-[1.55rem] sm:text-[95%];
+}
+.html-lg li,
+.html-md li {
+	@apply mb-1.5 leading-[1.45rem];
+}
+.html-lg iframe {
+	@apply my-9 aspect-video w-full;
+}
+.html-lg h2 {
+	@apply mt-14 mb-6 text-4xl sm:text-5xl;
+	font-family: var(--font-heading);
+}
+.html-lg h3 {
+	@apply mt-6 mb-2 text-xl font-semibold sm:text-2xl;
+}
+.html-lg h4 {
+	@apply mt-3 mb-1.5 text-lg font-medium sm:text-xl;
+}
+.html-lg a,
+.html-md a {
+	@apply underline;
+}
+.html-lg img,
+.html-md img {
+	@apply my-8 rounded-sm;
+}
+.html-lg strong,
+.html-md strong {
+	@apply font-semibold;
+}
+
+.html-sm p {
+	@apply mb-2.5;
+}
+.html-sm ul {
+	@apply mb-2.5 list-inside list-disc;
+}
+.html-sm li {
+	@apply mb-1;
+}
+.html-sm a {
+	@apply underline;
+}
