@@ -6,7 +6,8 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "mitchsaylor/windweave"
+      "repo": "mitchsaylor/windweave",
+      "disableThanks": true
     }
   ],
   "commit": true,
