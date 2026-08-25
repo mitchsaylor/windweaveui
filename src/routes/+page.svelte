@@ -53,7 +53,7 @@
 		</div>
 		<div class="page-w pad-xl bg-theme-50 py-10 dark:bg-theme-950">
 			<p class="mb-4 text-4xl">page-w</p>
-			<div class="flex grid-cols-3 -mx-2 flex-col items-start gap-4 sm:grid">
+			<div class="-mx-2 flex grid-cols-3 flex-col items-start gap-4 sm:grid">
 				<div
 					class="round-outer-sm border border-black/15 p-1 dark:border-theme-900 dark:bg-theme-900"
 				>
@@ -111,6 +111,14 @@
 			<div class="mt-2 flex">
 				<LoadingRing class="size-6 text-theme-500 dark:text-theme-400" />
 			</div>
+			<div class="mt-6 flex gap-4">
+				<div class="round pod-sm bg-error-100 dark:bg-error-900">
+					<p class="text-error-500 dark:text-error-400">⚠ Error text</p>
+				</div>
+				<div class="round pod-sm bg-success-100 dark:bg-success-900">
+					<p class="text-success-500 dark:text-success-400">✓ Success text</p>
+				</div>
+			</div>
 		</div>
 		<div class="page-w-xs bg-theme-50 py-7 dark:bg-theme-900">
 			<p class="mb-2 font-medium">page-w-xs</p>
@@ -145,7 +153,7 @@
 				Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation
 			</p>
 			<p class="mt-8 mb-4">Theme color scale</p>
-			<div class="flex flex-wrap items-start gap-6 -mx-2">
+			<div class="-mx-2 flex flex-wrap items-start gap-6">
 				<div
 					class="round grid grid-cols-13 overflow-hidden border border-theme-100 dark:border-theme-800"
 				>
