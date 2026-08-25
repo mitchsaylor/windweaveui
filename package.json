@@ -1,9 +1,9 @@
 {
-	"name": "windweave",
+	"name": "windweaveui",
 	"version": "0.0.1",
 	"license": "MIT",
 	"repository": {
-		"url": "https://github.com/mitchsaylor/windweave"
+		"url": "https://github.com/mitchsaylor/windweaveui"
 	},
 	"author": "Mitch Saylor <info@saylor.io> (https://saylor.io)",
 	"scripts": {
