@@ -3,3 +3,4 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@import "../lib/windweave-ui.css"
