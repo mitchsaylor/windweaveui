@@ -8,5 +8,6 @@
 :root {
 	--page-width: 1400px;
     --corner-radius: 1rem;
-    --theme-hue: 115;
+    --theme-hue: 120;
+    --accent-hue: 65
 }
