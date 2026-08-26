@@ -129,17 +129,19 @@ Global font size can be adjusted for font file differences by adjusting the base
 
 ### Border Radius & Rounding
 
-For consistent corners throughout your app, use `round`, `round-inner`, and `round-outer` to apply standard border radii to sections, buttons, and inputs.
+For consistent corners throughout your app, use `curve`, `curve-inner`, and `curve-outer` to apply standard border radii to sections, buttons, and inputs.
+
+All curve classes also include side and corner variants just like default TailwindCSS `rounded-*`, such as `curve-b` or `curve-tl-inner-sm`.
 
 | Class | Description |
 | ---- | ---- |
-| round | Base radius |
-| round-inner-sm | Use on elements spaced 0.25rem (p-1) inside of the base radius |
-| round-outer-sm | Use on elements spaced 0.25rem (p-1) outside of the base radius |
-| round-inner | Use on elements spaced 0.5rem (p-2) inside of the base radius |
-| round-outer | Use on elements spaced 0.5rem (p-2) outside of the base radius |
-| round-inner-lg | Use on elements spaced 0.75rem (p-3) inside of the base radius |
-| round-outer-lg | Use on elements spaced 0.75rem (p-3) outside of the base radius |
+| curve | Base radius |
+| curve-inner-sm | Use on elements spaced 0.25rem (p-1) inside of the base radius |
+| curve-outer-sm | Use on elements spaced 0.25rem (p-1) outside of the base radius |
+| curve-inner | Use on elements spaced 0.5rem (p-2) inside of the base radius |
+| curve-outer | Use on elements spaced 0.5rem (p-2) outside of the base radius |
+| curve-inner-lg | Use on elements spaced 0.75rem (p-3) inside of the base radius |
+| curve-outer-lg | Use on elements spaced 0.75rem (p-3) outside of the base radius |
 
 To adjust the base rouding of your content, add the following variables with your own values to your project:
 
