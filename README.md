@@ -4,7 +4,7 @@ Extends your project's TailwindCSS config with a wider range of text, size, and 
 
 Requires [TailwindCSS](https://tailwindcss.com/) v4.
 
-Components require [Svelte](https://svelte.dev/) 5.
+Components require [Svelte](https://svelte.dev/) 5. -  *[View components documentation](#components)*
 
 ## Usage
 
