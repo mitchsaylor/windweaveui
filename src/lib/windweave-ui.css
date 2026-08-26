@@ -97,27 +97,194 @@
 }
 
 /* Corners */
-.round {
+.curve {
 	@apply rounded-[var(--c-rad)];
 }
-.round-inner-sm,
-.round-touch {
+.curve-l {
+	@apply rounded-l-[var(--c-rad)];
+}
+.curve-t {
+	@apply rounded-t-[var(--c-rad)];
+}
+.curve-r {
+	@apply rounded-r-[var(--c-rad)];
+}
+.curve-b {
+	@apply rounded-b-[var(--c-rad)];
+}
+.curve-tl {
+	@apply rounded-tl-[var(--c-rad)];
+}
+.curve-tr {
+	@apply rounded-tr-[var(--c-rad)];
+}
+.curve-bl {
+	@apply rounded-bl-[var(--c-rad)];
+}
+.curve-br {
+	@apply rounded-br-[var(--c-rad)];
+}
+.curve-inner-sm {
 	@apply rounded-[calc(max(var(--c-rad)-0.25rem,0.35rem))];
 }
-.round-outer-sm {
+.curve-t-inner-sm {
+	@apply rounded-t-[calc(max(var(--c-rad)-0.25rem,0.35rem))];
+}
+.curve-b-inner-sm {
+	@apply rounded-b-[calc(max(var(--c-rad)-0.25rem,0.35rem))];
+}
+.curve-r-inner-sm {
+	@apply rounded-r-[calc(max(var(--c-rad)-0.25rem,0.35rem))];
+}
+.curve-l-inner-sm {
+	@apply rounded-l-[calc(max(var(--c-rad)-0.25rem,0.35rem))];
+}
+.curve-tl-inner-sm {
+	@apply rounded-tl-[calc(max(var(--c-rad)-0.25rem,0.35rem))];
+}
+.curve-tr-inner-sm {
+	@apply rounded-tr-[calc(max(var(--c-rad)-0.25rem,0.35rem))];
+}
+.curve-bl-inner-sm {
+	@apply rounded-bl-[calc(max(var(--c-rad)-0.25rem,0.35rem))];
+}
+.curve-br-inner-sm {
+	@apply rounded-br-[calc(max(var(--c-rad)-0.25rem,0.35rem))];
+}
+.curve-outer-sm {
 	@apply rounded-[calc((var(--c-rad)+0.25rem))];
 }
-.round-inner {
+.curve-t-outer-sm {
+	@apply rounded-t-[calc((var(--c-rad)+0.25rem))];
+}
+.curve-b-outer-sm {
+	@apply rounded-b-[calc((var(--c-rad)+0.25rem))];
+}
+.curve-r-outer-sm {
+	@apply rounded-r-[calc((var(--c-rad)+0.25rem))];
+}
+.curve-l-outer-sm {
+	@apply rounded-l-[calc((var(--c-rad)+0.25rem))];
+}
+.curve-tl-outer-sm {
+	@apply rounded-tl-[calc((var(--c-rad)+0.25rem))];
+}
+.curve-tr-outer-sm {
+	@apply rounded-tr-[calc((var(--c-rad)+0.25rem))];
+}
+.curve-bl-outer-sm {
+	@apply rounded-bl-[calc((var(--c-rad)+0.25rem))];
+}
+.curve-br-outer-sm {
+	@apply rounded-br-[calc((var(--c-rad)+0.25rem))];
+}
+.curve-inner {
 	@apply rounded-[calc(max(var(--c-rad)-0.5rem,0.35rem))];
 }
-.round-outer {
+.curve-t-inner {
+	@apply rounded-t-[calc(max(var(--c-rad)-0.5rem,0.35rem))];
+}
+.curve-b-inner {
+	@apply rounded-b-[calc(max(var(--c-rad)-0.5rem,0.35rem))];
+}
+.curve-l-inner {
+	@apply rounded-l-[calc(max(var(--c-rad)-0.5rem,0.35rem))];
+}
+.curve-r-inner {
+	@apply rounded-r-[calc(max(var(--c-rad)-0.5rem,0.35rem))];
+}
+.curve-tl-inner {
+	@apply rounded-tl-[calc(max(var(--c-rad)-0.5rem,0.35rem))];
+}
+.curve-tr-inner {
+	@apply rounded-tr-[calc(max(var(--c-rad)-0.5rem,0.35rem))];
+}
+.curve-bl-inner {
+	@apply rounded-bl-[calc(max(var(--c-rad)-0.5rem,0.35rem))];
+}
+.curve-br-inner {
+	@apply rounded-br-[calc(max(var(--c-rad)-0.5rem,0.35rem))];
+}
+.curve-outer {
 	@apply rounded-[calc((var(--c-rad)+0.5rem))];
 }
-.round-inner-lg {
+.curve-t-outer {
+	@apply rounded-t-[calc((var(--c-rad)+0.5rem))];
+}
+.curve-b-outer {
+	@apply rounded-b-[calc((var(--c-rad)+0.5rem))];
+}
+.curve-r-outer {
+	@apply rounded-r-[calc((var(--c-rad)+0.5rem))];
+}
+.curve-l-outer {
+	@apply rounded-l-[calc((var(--c-rad)+0.5rem))];
+}
+.curve-tl-outer {
+	@apply rounded-tl-[calc((var(--c-rad)+0.5rem))];
+}
+.curve-tr-outer {
+	@apply rounded-tr-[calc((var(--c-rad)+0.5rem))];
+}
+.curve-bl-outer {
+	@apply rounded-bl-[calc((var(--c-rad)+0.5rem))];
+}
+.curve-br-outer {
+	@apply rounded-br-[calc((var(--c-rad)+0.5rem))];
+}
+.curve-inner-lg {
 	@apply rounded-[calc(max(var(--c-rad)-0.75rem,0.35rem))];
 }
-.round-outer-lg {
+.curve-t-inner-lg {
+	@apply rounded-t-[calc(max(var(--c-rad)-0.75rem,0.35rem))];
+}
+.curve-b-inner-lg {
+	@apply rounded-b-[calc(max(var(--c-rad)-0.75rem,0.35rem))];
+}
+.curve-l-inner-lg {
+	@apply rounded-l-[calc(max(var(--c-rad)-0.75rem,0.35rem))];
+}
+.curve-r-inner-lg {
+	@apply rounded-r-[calc(max(var(--c-rad)-0.75rem,0.35rem))];
+}
+.curve-tl-inner-lg {
+	@apply rounded-tl-[calc(max(var(--c-rad)-0.75rem,0.35rem))];
+}
+.curve-tr-inner-lg {
+	@apply rounded-tr-[calc(max(var(--c-rad)-0.75rem,0.35rem))];
+}
+.curve-bl-inner-lg {
+	@apply rounded-bl-[calc(max(var(--c-rad)-0.75rem,0.35rem))];
+}
+.curve-br-inner-lg {
+	@apply rounded-br-[calc(max(var(--c-rad)-0.75rem,0.35rem))];
+}
+.curve-outer-lg {
 	@apply rounded-[calc((var(--c-rad)+0.75rem))];
+}
+.curve-t-outer-lg {
+	@apply rounded-t-[calc((var(--c-rad)+0.75rem))];
+}
+.curve-b-outer-lg {
+	@apply rounded-b-[calc((var(--c-rad)+0.75rem))];
+}
+.curve-l-outer-lg {
+	@apply rounded-l-[calc((var(--c-rad)+0.75rem))];
+}
+.curve-r-outer-lg {
+	@apply rounded-r-[calc((var(--c-rad)+0.75rem))];
+}
+.curve-tl-outer-lg {
+	@apply rounded-tl-[calc((var(--c-rad)+0.75rem))];
+}
+.curve-tr-outer-lg {
+	@apply rounded-tr-[calc((var(--c-rad)+0.75rem))];
+}
+.curve-bl-outer-lg {
+	@apply rounded-bl-[calc((var(--c-rad)+0.75rem))];
+}
+.curve-br-outer-lg {
+	@apply rounded-br-[calc((var(--c-rad)+0.75rem))];
 }
 
 /* Typography */
