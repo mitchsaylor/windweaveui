@@ -30,8 +30,8 @@ Import the stylesheets into your project below the TailwindCSS import
 
 A set of theme color-scale classes have been added to make building UI elements in light or dark mode with sufficient contrast more convenient. Additionally, standard colors have been added for error, warning, and success state text and backgrounds.
 
-![Theme color scale](/static/theme-color-scale.png)
-![Theme color sample](/static/theme-color-sample.png)
+<img src="./static/theme-color-scale.png" width="400">
+<img src="./static/theme-color-sample.png" width="500">
 
 These classes work with all color-based Tailwind styles such as `bg-*`, `text-*`, and `ring-*`.
 
