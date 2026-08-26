@@ -1,5 +1,11 @@
 # windweaveui
 
+## 0.2.1
+
+### Patch Changes
+
+- [#17](https://github.com/mitchsaylor/windweaveui/pull/17) [`c27f9f2`](https://github.com/mitchsaylor/windweaveui/commit/c27f9f24a9dfc8fef10384b20363b8e028978328) - Fix: add z-index to active touch & input elements
+
 ## 0.2.0
 
 ### Minor Changes
