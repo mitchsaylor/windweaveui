@@ -1,5 +1,10 @@
 <script lang="ts">
-	let { class: classNames }: { class?: string } = $props();
+	let { class: classNames }: LoadingRingProps = $props();
+
+	interface LoadingRingProps {
+		/** Class overrides for the component */
+		class?: string;
+	}
 </script>
 
 <span class="sr-only">Loading</span>
