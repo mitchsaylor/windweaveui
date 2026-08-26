@@ -1,5 +1,11 @@
 # windweaveui
 
+## 0.3.0
+
+### Minor Changes
+
+- [#19](https://github.com/mitchsaylor/windweaveui/pull/19) [`3c24ef5`](https://github.com/mitchsaylor/windweaveui/commit/3c24ef563a8cd73fc86f2fc3d658c0a4d31ec2c4) - Feat: Add hint- color variables
+
 ## 0.2.1
 
 ### Patch Changes
