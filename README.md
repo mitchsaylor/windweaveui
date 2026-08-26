@@ -1,6 +1,6 @@
 # WindWeave UI
 
-Extends your project's TailwindCSS config with a wider range of text, size, and color options based on theme variables for building more consistent visual layouts. Also includes a set of UI-related components for use in Svelte projects.
+Extends your project's TailwindCSS config with a wider range of text, size, and color options based on theme variables for building more consistent visual layouts. Also includes a set of common UI-related components for use in Svelte projects.
 
 Requires [TailwindCSS](https://tailwindcss.com/) v4.
 
@@ -177,3 +177,51 @@ Use `no-scrollbar` to hide the scrollbar on an element with overflow.
 | Class | Description |
 | ---- | ---- |
 | no-scrollbar | Sets the scrollbar width to 0px |
+
+
+## Components
+
+### Page Loading Indicator
+
+Adds a loading indicator bar to the top of the page to give users a visual indication that navigation is occurring.
+
+```html
+// +layout.svelte
+
+<script lang="ts">
+    import { PageLoadIndicator } from "windweaveui"
+</script>
+
+<div>
+    <PageLoadIndicator excludedPaths={["/"]} />
+    <main>
+        {@render children()}
+    </main>
+</div>
+```
+
+| Parameter | Details |
+| --- | --- |
+| class | Optional `string` - Appends an additional class string to the component |
+| includedPaths | Optional `string[]` - The page loader will only display for the specified routes |
+| excludedPaths | Optional `string[]` - These routes are excluded from showing the loading indicator. Only used if `includedPaths` is undefined. |
+| showOnlyParamChange | Optional `boolean` - If true, the loading indicator will only be shown when the page search parameters change, not on navigation between pages. |
+
+### Loading Ring
+
+```html
+// *.svelte
+
+<script lang="ts">
+    import { LoadingRing } from "windweaveui"
+    // Must also import the loading ring CSS in your project TailwindCSS config
+</script>
+
+<div>
+    <LoadingRing class="size-6 text-theme-500" />
+</div>
+```
+
+| Parameter | Details |
+| --- | --- |
+| class | Optional `string` - Appends an additional class string to the component |

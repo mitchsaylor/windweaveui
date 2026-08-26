@@ -1,6 +1,10 @@
 <script lang="ts">
 	// Components
 	import LoadingRing from '#lib/loadingRing.svelte';
+	import PageLoadIndicator from '#lib/pageLoadIndicator.svelte';
+
+	// Svelte
+	import { page } from '$app/state';
 
 	let darkMode: boolean = $state(false);
 	const toggleDarkMode = () => {
@@ -41,6 +45,7 @@
 </script>
 
 <main class={darkMode ? ' dark' : ''}>
+	<PageLoadIndicator showOnlyParamChange />
 	<div class="py-4 dark:bg-theme-950 dark:text-theme-100">
 		<div class="page-w my-10">
 			<h1 class="text-4xl font-bold">WindWeave UI</h1>
@@ -61,6 +66,12 @@
 				>
 					Toggle dark mode
 				</button>
+				<a
+					href={`${page.url.pathname}?x=${Math.random()?.toFixed(3)}`}
+					class="touch round border-theme-950 text-xs ring-theme-950 dark:border-theme-900 dark:ring-theme-800"
+				>
+					Goto random URL
+				</a>
 			</div>
 			<div class="-mx-2 mt-6 flex flex-wrap items-center gap-6">
 				<div>
@@ -198,7 +209,7 @@
 				<p class="text-lg font-medium text-accent-900">Accent color</p>
 			</div>
 		</div>
-		<div class="page-w-sm my-10 html">
+		<div class="page-w-sm html my-10">
 			<h1>HTML Format Demo</h1>
 			<p>
 				This paragraph demonstrates common inline formatting options such as <strong
@@ -218,7 +229,10 @@
 				formatting to highlight quotes."
 			</blockquote>
 			<figure>
-				<img src="https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA" alt="Sample image description" />
+				<img
+					src="https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA"
+					alt="Sample image description"
+				/>
 				<figcaption>Caption text associated with the uploaded image.</figcaption>
 			</figure>
 			<hr />
