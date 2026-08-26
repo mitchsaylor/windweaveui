@@ -54,6 +54,10 @@
 	--color-theme-100: oklch(0.955 0.0065 var(--th-col));
 	--color-theme-50: oklch(0.975 0.0035 var(--th-col));
 
+	--color-hint-light: oklch(0.13 0.05 var(--th-col) / 0.08);
+	--color-hint: oklch(0.13 0.05 var(--th-col) / 0.14);
+	--color-hint-dark: oklch(0.13 0.05 var(--th-col) / 0.22);
+
 	--color-accent-100: oklch(0.9 0.007 var(--ah-col));
 	--color-accent-900: oklch(0.2 0.02 var(--ah-col));
 }
@@ -312,7 +316,7 @@ p > a {
 	@apply border px-5 py-3 transition-shadow hover:z-50 hover:ring-1 hover:brightness-105 focus:z-50 focus:ring-1 focus:brightness-105 active:z-50 active:ring-1 active:brightness-105 enabled:cursor-pointer;
 }
 .input {
-	@apply px-4.5 py-2.75 placeholder:text-black/45 hover:z-50 hover:ring-1 focus:z-50 focus:ring-1 active:z-50 active:ring-1;
+	@apply bg-transparent px-4.5 py-2.75 placeholder:text-black/45 hover:z-50 hover:ring-1 focus:z-50 focus:ring-1 active:z-50 active:ring-1 dark:placeholder:text-white/45;
 }
 .no-arrows {
 	input::-webkit-outer-spin-button,
@@ -373,7 +377,7 @@ p > a {
 	@apply mb-0;
 }
 .html iframe {
-	@apply my-9 aspect-video w-full;
+	@apply my-6;
 }
 .html strong {
 	@apply font-semibold;
