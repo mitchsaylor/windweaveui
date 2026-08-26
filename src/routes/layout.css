@@ -3,5 +3,5 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@import '../lib/windweave-ui.css';
+@import '../lib/windweave-ui.css' layer(component);
 @import '../lib/loading-ring.css';

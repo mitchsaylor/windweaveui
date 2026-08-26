@@ -196,6 +196,12 @@
 					/>
 				</li>
 			</ul>
+			<div class="curve my-4 flex bg-theme-50 shadow">
+				<select class="touch px-10 w-40 curve-l border-0 border-black/20 border-r">
+					<option>Select</option>
+				</select>
+				<input type="text" class="input grow text-sm curve-r border-0" />
+			</div>
 			<p class="leading-xl mt-6 text-sm">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
