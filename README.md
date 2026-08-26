@@ -28,12 +28,12 @@ Import the stylesheets into your project below the TailwindCSS import
 
 ### Additional Colors
 
-A set of theme color-scale classes have been added to make building UI elements in light or dark mode with sufficient contrast more convenient. Additionally, standard colors have been added for error, warning, and success state text and backgrounds.
+> All added color classes work with the default Tailwind color-based styles such as `bg-*`, `text-*`, and `ring-*`.
+
+A set of theme color-scale classes have been added to make building UI elements in light or dark mode with sufficient contrast more convenient.
 
 <img src="./static/theme-color-scale.png" width="400">
 <img src="./static/theme-color-sample.png" width="500">
-
-These classes work with all color-based Tailwind styles such as `bg-*`, `text-*`, and `ring-*`.
 
 | Class | Description |
 | ---- | ---- |
@@ -49,6 +49,21 @@ These classes work with all color-based Tailwind styles such as `bg-*`, `text-*`
 | *-theme-900 | Dark background level 2 |
 | *-theme-950 | Dark background level 3 |
 | *-black | Replaces the default black with a very dark theme-tinted black. |
+
+To set the base theme color, add the following variables with your own values to your project:
+
+```css
+:root {
+    --theme-hue: 220; /* 0 to 360 based on color wheel */
+    --theme-saturation: 0.2; /* 0 to 0.4, higher saturations will fallback to alternate values on some monitors */
+    --theme-lightness: 0.56; /* 0 (black) to 1 (white) */
+}
+```
+
+Standard colors have been added for error, warning, and success state text and backgrounds.
+
+| Class | Description |
+| ---- | ---- |
 | *-error-100 | Light-mode background |
 | *-error-400 | Dark-mode text |
 | *-error-500 | Light-mode text |
@@ -62,15 +77,13 @@ These classes work with all color-based Tailwind styles such as `bg-*`, `text-*`
 | *-success-500 | Light-mode text |
 | *-success-900 | Dark-mode background |
 
-To set the base theme color, add the following variables with your own values to your project:
+The `hint-` color scale has been added for use on borders, dividers, and rules.
 
-```css
-:root {
-    --theme-hue: 220; /* 0 to 360 based on color wheel */
-    --theme-saturation: 0.2; /* 0 to 0.4, higher saturations will fallback to alternate values on some monitors */
-    --theme-lightness: 0.56; /* 0 (black) to 1 (white) */
-}
-```
+| Class | Description |
+| ---- | ---- |
+| *-hint-light | Light gray |
+| *-hint | Medium gray |
+| *-hint-dark | Darker gray |
 
 ### Page Width & Containers
 

@@ -120,27 +120,23 @@
 				</p>
 			{/each}
 			<div class="-mx-2 mt-10 flex grid-cols-3 flex-col items-center gap-4 sm:grid">
-				<div
-					class="curve-outer-sm border border-black/15 p-1 dark:border-theme-900 dark:bg-theme-900"
-				>
+				<div class="curve-outer-sm border border-hint p-1 dark:border-theme-900 dark:bg-theme-900">
 					<div class="curve justify-between bg-white p-1 shadow dark:bg-theme-800">
-						<div class="curve-inner-sm border border-black/15 p-5 dark:border-black/50">
+						<div class="curve-inner-sm border border-hint p-5 dark:border-theme-950">
 							<p>curve, curve-inner-sm, curve-outer-sm</p>
 						</div>
 					</div>
 				</div>
-				<div class="curve-outer border border-black/15 p-2 dark:border-theme-900 dark:bg-theme-900">
+				<div class="curve-outer border border-hint p-2 dark:border-theme-900 dark:bg-theme-900">
 					<div class="curve justify-between bg-white p-2 shadow dark:bg-theme-800">
-						<div class="curve-inner border border-black/15 p-5 dark:border-black/50">
+						<div class="curve-inner border border-hint p-5 dark:border-theme-950">
 							<p>curve, curve-inner, curve-outer</p>
 						</div>
 					</div>
 				</div>
-				<div
-					class="curve-outer-lg border border-black/15 p-3 dark:border-theme-900 dark:bg-theme-900"
-				>
+				<div class="curve-outer-lg border border-hint p-3 dark:border-theme-900 dark:bg-theme-900">
 					<div class="curve justify-between bg-white p-3 shadow dark:bg-theme-800">
-						<div class="curve-inner-lg border border-black/15 p-5 dark:border-black/50">
+						<div class="curve-inner-lg border border-hint p-5 dark:border-theme-950">
 							<p>curve, curve-inner-lg, curve-outer-lg</p>
 						</div>
 					</div>
@@ -196,11 +192,17 @@
 					/>
 				</li>
 			</ul>
-			<div class="curve my-4 flex bg-theme-50 shadow">
-				<select class="touch px-10 w-40 curve-l border-0 border-black/20 border-r">
+			<div class="curve my-4 flex bg-theme-50 shadow dark:bg-theme-800">
+				<select
+					class="touch curve-l w-40 border-none bg-transparent px-10 ring-theme-500 dark:ring-theme-400"
+				>
 					<option>Select</option>
 				</select>
-				<input type="text" class="input grow text-sm curve-r border-0" />
+				<input
+					type="text"
+					placeholder="Input"
+					class="input curve-r grow border-0 border-l border-hint-light text-sm ring-theme-500 dark:border-theme-900 dark:ring-theme-400"
+				/>
 			</div>
 			<p class="leading-xl mt-6 text-sm">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
