@@ -20,7 +20,7 @@ Import the stylesheets into your project below the TailwindCSS import
 /* layout.css */
 @import 'tailwindcss';
 
-@import "windweaveui/windweave-ui.css";
+@import "windweaveui/windweave-ui.css" layer(components);
 @import "windweaveui/loading-ring.css";
 ```
 
