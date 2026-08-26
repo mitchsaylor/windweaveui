@@ -1,5 +1,11 @@
 # windweaveui
 
+## 0.1.4
+
+### Patch Changes
+
+- [#13](https://github.com/mitchsaylor/windweaveui/pull/13) [`40495a9`](https://github.com/mitchsaylor/windweaveui/commit/40495a979f78798d5f571be3c87569c25db3810f) - Fix: remove unnecessary classname
+
 ## 0.1.3
 
 ### Patch Changes
