@@ -144,9 +144,6 @@ p > a {
 .touch {
 	@apply border px-5 py-3 transition-shadow hover:ring-1 hover:brightness-105 focus:ring-1 focus:brightness-105 active:ring-1 active:brightness-105 enabled:cursor-pointer;
 }
-.touch-custom {
-	@apply transition-shadow hover:ring-1 hover:brightness-105 focus:ring-1 focus:brightness-105 active:ring-1 active:brightness-105 enabled:cursor-pointer;
-}
 .input {
 	@apply px-4.5 py-2.75 placeholder:text-black/45 hover:ring-1 focus:ring-1 active:ring-1;
 }

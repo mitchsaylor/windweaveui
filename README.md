@@ -158,7 +158,6 @@ If custom padding is needed on a button, use `touch-custom` to apply all classes
 | Class | Description |
 | ---- | ---- |
 | touch | Apply standard styles to touch elements such as buttons |
-| touch-custom | Standard styles without padding |
 | input | Standard styles for input elements |
 | no-arrows | Removes increase/decrease arrows from number inputs - must be applied to the parent element |
 
