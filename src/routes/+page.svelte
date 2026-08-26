@@ -1,4 +1,5 @@
 <script lang="ts">
+	// Components
 	import LoadingRing from '#lib/loadingRing.svelte';
 
 	let darkMode: boolean = $state(false);
@@ -165,7 +166,7 @@
 					</button>
 				</li>
 				<li>
-					<button type="button" class="round touch border border-theme-500 ring-theme-500">
+					<button type="button" class="round touch border-theme-500 ring-theme-500">
 						<p>touch</p>
 					</button>
 				</li>
@@ -176,8 +177,15 @@
 						placeholder="Input"
 					/>
 				</li>
+				<li class="no-arrows">
+					<input
+						type="number"
+						class="round input w-20 text-center focus:border-theme-500 focus:ring-theme-500"
+						placeholder="0"
+					/>
+				</li>
 			</ul>
-			<p class="air-xl mt-6 text-sm">
+			<p class="leading-xl mt-6 text-sm">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -185,10 +193,75 @@
 				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>
-		<div class="page-w">
+		<div class="page-w my-10">
 			<div class="round pod bg-accent-100">
-				<p class="font-medium text-lg text-accent-900">Accent color</p>
+				<p class="text-lg font-medium text-accent-900">Accent color</p>
 			</div>
+		</div>
+		<div class="page-w-sm my-10 html">
+			<h1>HTML Format Demo</h1>
+			<p>
+				This paragraph demonstrates common inline formatting options such as <strong
+					>bold text</strong
+				>,
+				<em>italic text</em>, <u>underlined text</u>, <del>strikethrough</del>,
+				<mark>highlighted text</mark>, and a
+				<a href="https://example.com" target="_blank" rel="noopener">hyperlink</a>.
+			</p>
+			<h2>Subheading for Sections</h2>
+			<p>
+				You can also include technical notation like inline code <code>const value = true;</code>,
+				subscripts like H<sub>2</sub>O, or superscripts like E = mc<sup>2</sup>.
+			</p>
+			<blockquote>
+				"This is a blockquote element, typically styled with a left border or distinct text
+				formatting to highlight quotes."
+			</blockquote>
+			<figure>
+				<img src="https://fastly.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA" alt="Sample image description" />
+				<figcaption>Caption text associated with the uploaded image.</figcaption>
+			</figure>
+			<hr />
+			<h3>Lists and Collections</h3>
+			<ul>
+				<li>Unordered bullet point item</li>
+				<li>
+					Second item with a nested ordered list:
+					<ol>
+						<li>First step in a sequence</li>
+						<li>Second step in a sequence</li>
+					</ol>
+				</li>
+				<li>Third bullet point item</li>
+			</ul>
+			<h3>Code Blocks and Data Tables</h3>
+			<pre><code
+					>// Styled code block for multi-line snippets
+function exampleCodeBlock() {@html `{
+  console.log("Rich Text Content");
+}`}</code
+				></pre>
+			<table>
+				<thead>
+					<tr>
+						<th>Column Header 1</th>
+						<th>Column Header 2</th>
+						<th>Column Header 3</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Row 1, Cell 1</td>
+						<td>Row 1, Cell 2</td>
+						<td>Row 1, Cell 3</td>
+					</tr>
+					<tr>
+						<td>Row 2, Cell 1</td>
+						<td>Row 2, Cell 2</td>
+						<td>Row 2, Cell 3</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </main>

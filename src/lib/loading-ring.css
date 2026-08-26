@@ -1,0 +1,31 @@
+.loading-ring {
+	--uib-speed: 2s;
+	vertical-align: middle;
+	transform-origin: center;
+	animation: loading-ring-rotate var(--uib-speed) linear infinite;
+}
+.loading-ring circle {
+	fill: none;
+	stroke-dasharray: 1, 200;
+	stroke-dashoffset: 0;
+	stroke-linecap: round;
+	animation: loading-ring-stretch calc(var(--uib-speed) * 0.75) ease-in-out infinite;
+}
+@keyframes loading-ring-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes loading-ring-stretch {
+	0% {
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 90, 200;
+		stroke-dashoffset: -35px;
+	}
+	100% {
+		stroke-dashoffset: -124px;
+	}
+}

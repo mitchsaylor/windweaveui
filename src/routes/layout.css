@@ -4,10 +4,4 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @import '../lib/windweave-ui.css';
-
-:root {
-	--page-width: 1400px;
-    --corner-radius: 1rem;
-    --theme-hue: 120;
-    --accent-hue: 65
-}
+@import '../lib/loading-ring.css';
