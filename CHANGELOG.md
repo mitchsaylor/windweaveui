@@ -1,5 +1,11 @@
 # windweaveui
 
+## 0.2.0
+
+### Minor Changes
+
+- [#15](https://github.com/mitchsaylor/windweaveui/pull/15) [`ae9ade4`](https://github.com/mitchsaylor/windweaveui/commit/ae9ade40517bc016c836962ccf69d0dcbe8c3d5e) - Breaking: Change round- to curve-, and add side & corner class variants.
+
 ## 0.1.4
 
 ### Patch Changes
