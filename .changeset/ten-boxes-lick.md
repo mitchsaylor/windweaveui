@@ -2,4 +2,4 @@
 'windweaveui': minor
 ---
 
-Feat: add package features
+Feat: add package
