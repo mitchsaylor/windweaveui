@@ -1,5 +1,11 @@
 # windweaveui
 
+## 0.1.3
+
+### Patch Changes
+
+- [#7](https://github.com/mitchsaylor/windweaveui/pull/7) [`2872951`](https://github.com/mitchsaylor/windweaveui/commit/2872951e63d51dd64dd643602a7ff764435cf762) - Docs: add layer to css import
+
 ## 0.1.2
 
 ### Patch Changes
