@@ -1,5 +1,11 @@
 # windweaveui
 
+## 0.3.2
+
+### Patch Changes
+
+- [#23](https://github.com/mitchsaylor/windweaveui/pull/23) [`5d9a803`](https://github.com/mitchsaylor/windweaveui/commit/5d9a803fbb06636ade2ae659b8baf22450bce7e5) - Fix: Adjust touch and input classes for disabled state
+
 ## 0.3.1
 
 ### Patch Changes
