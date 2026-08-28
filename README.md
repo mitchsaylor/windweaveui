@@ -195,6 +195,15 @@ Use `no-scrollbar` to hide the scrollbar on an element with overflow.
 
 ## Components
 
+To correctly load the CSS for imported components, make sure to include a source directive in your TailwindCSS config.
+
+```css
+/* layout.css */
+
+@import "tailwindcss"
+@source "../../node_modules/windweaveui" {}
+```
+
 ### Page Loading Indicator
 
 Adds a loading indicator bar to the top of the page to give users a visual indication that navigation is occurring.
