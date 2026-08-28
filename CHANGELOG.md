@@ -1,5 +1,11 @@
 # windweaveui
 
+## 0.3.1
+
+### Patch Changes
+
+- [#21](https://github.com/mitchsaylor/windweaveui/pull/21) [`6e64feb`](https://github.com/mitchsaylor/windweaveui/commit/6e64febf8ba42dc010bb3638ce86bdaee8681941) - Fix: add CSS source to docs for components
+
 ## 0.3.0
 
 ### Minor Changes
