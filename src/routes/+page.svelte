@@ -91,6 +91,7 @@
 						>
 							<p>Light</p>
 							<button
+								type="button"
 								class="touch curve w-20 border-theme-500 bg-theme-500 text-xs text-white ring-theme-500"
 							>
 								Button
@@ -104,7 +105,10 @@
 							class="curve-inner flex items-center gap-4 bg-theme-800 p-4 px-6 text-white shadow-xs"
 						>
 							<p class="">Dark</p>
-							<button class="touch curve w-20 border-theme-400 bg-theme-400 text-xs ring-theme-400">
+							<button
+								type="button"
+								class="touch curve w-20 border-theme-400 bg-theme-400 text-xs ring-theme-400"
+							>
 								Button
 							</button>
 						</div>

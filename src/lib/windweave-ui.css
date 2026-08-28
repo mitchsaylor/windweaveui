@@ -313,10 +313,10 @@ p > a {
 
 /* Inputs & buttons */
 .touch {
-	@apply border px-5 py-3 transition-shadow hover:z-50 hover:ring-1 hover:brightness-105 focus:z-50 focus:ring-1 focus:brightness-105 active:z-50 active:ring-1 active:brightness-105 enabled:cursor-pointer;
+	@apply cursor-pointer border px-5 py-3 transition-shadow hover:z-50 hover:ring-1 hover:brightness-105 focus:z-50 focus:ring-1 focus:brightness-105 active:z-50 active:ring-1 active:brightness-105 disabled:cursor-default disabled:hover:ring-0 disabled:hover:brightness-100;
 }
 .input {
-	@apply bg-transparent px-4.5 py-2.75 placeholder:text-black/45 hover:z-50 hover:ring-1 focus:z-50 focus:ring-1 active:z-50 active:ring-1 dark:placeholder:text-white/45;
+	@apply bg-transparent px-4.5 py-2.75 placeholder:text-black/45 focus:z-50 focus:ring-1 active:z-50 active:ring-1 enabled:hover:z-50 enabled:hover:ring-1 dark:placeholder:text-white/45;
 }
 .no-arrows {
 	input::-webkit-outer-spin-button,
