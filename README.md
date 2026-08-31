@@ -142,21 +142,21 @@ Global font size can be adjusted for font file differences by adjusting the base
 
 ### Border Radius & Rounding
 
-For consistent corners throughout your app, use `curve`, `curve-inner`, and `curve-outer` to apply standard border radii to sections, buttons, and inputs.
+For consistent corners throughout your app, use `rounded-base`, `rounded-inner`, and `rounded-outer` to apply standard border radii to sections, buttons, and inputs.
 
-All curve classes also include side and corner variants just like default TailwindCSS `rounded-*`, such as `curve-b` or `curve-tl-inner-sm`.
+All added rounding classes also include side and corner variants just like default TailwindCSS `rounded-*`, such as `rounded-b-base` or `rounded-tl-inner-sm`.
 
 | Class | Description |
 | ---- | ---- |
-| curve | Base radius |
-| curve-inner-sm | Use on elements spaced 0.25rem (p-1) inside of the base radius |
-| curve-outer-sm | Use on elements spaced 0.25rem (p-1) outside of the base radius |
-| curve-inner | Use on elements spaced 0.5rem (p-2) inside of the base radius |
-| curve-outer | Use on elements spaced 0.5rem (p-2) outside of the base radius |
-| curve-inner-lg | Use on elements spaced 0.75rem (p-3) inside of the base radius |
-| curve-outer-lg | Use on elements spaced 0.75rem (p-3) outside of the base radius |
+| rounded-base | Base radius |
+| rounded-inner-sm | Use on elements spaced 0.25rem (p-1) inside of the base radius |
+| rounded-outer-sm | Use on elements spaced 0.25rem (p-1) outside of the base radius |
+| rounded-inner | Use on elements spaced 0.5rem (p-2) inside of the base radius |
+| rounded-outer | Use on elements spaced 0.5rem (p-2) outside of the base radius |
+| rounded-inner-lg | Use on elements spaced 0.75rem (p-3) inside of the base radius |
+| rounded-outer-lg | Use on elements spaced 0.75rem (p-3) outside of the base radius |
 
-To adjust the base rouding of your content, add the following variables with your own values to your project:
+To adjust the base rounding of your content, add the following variables with your own values to your project:
 
 ```css
 :root {
