@@ -62,13 +62,13 @@
 				<button
 					type="button"
 					onclick={toggleDarkMode}
-					class="touch curve border-theme-950 bg-theme-950 text-xs text-white ring-theme-950 dark:border-theme-900 dark:bg-theme-900 dark:ring-theme-800"
+					class="touch rounded-base border-theme-950 bg-theme-950 text-xs text-white ring-theme-950 dark:border-theme-900 dark:bg-theme-900 dark:ring-theme-800"
 				>
 					Toggle dark mode
 				</button>
 				<a
 					href={`${page.url.pathname}?x=${Math.random()?.toFixed(3)}`}
-					class="touch curve border-theme-950 text-xs ring-theme-950 dark:border-theme-900 dark:ring-theme-800"
+					class="touch rounded-base border-theme-950 text-xs ring-theme-950 dark:border-theme-900 dark:ring-theme-800"
 				>
 					Goto random URL
 				</a>
@@ -77,37 +77,37 @@
 				<div>
 					<p class="mb-4 px-2">Theme color scale</p>
 					<div
-						class="curve grid grid-cols-13 overflow-hidden border border-theme-100 dark:border-theme-800"
+						class="grid grid-cols-13 overflow-hidden rounded-base border border-theme-100 dark:border-theme-800"
 					>
 						{#each colorSpaces as color (color)}
 							<div class="{color} size-10"></div>
 						{/each}
 					</div>
 				</div>
-				<div class="curve-outer bg-theme-100 p-2 pt-5 pr-10">
-					<div class="curve bg-theme-50 p-2 pt-5 pr-10 shadow-xs">
+				<div class="rounded-outer bg-theme-100 p-2 pt-5 pr-10">
+					<div class="rounded-base bg-theme-50 p-2 pt-5 pr-10 shadow-xs">
 						<div
-							class="curve-inner flex items-center gap-4 bg-white p-4 px-8 text-theme-950 shadow-xs"
+							class="flex items-center gap-4 rounded-inner bg-white p-4 px-8 text-theme-950 shadow-xs"
 						>
 							<p>Light</p>
 							<button
 								type="button"
-								class="touch curve w-20 border-theme-500 bg-theme-500 text-xs text-white ring-theme-500"
+								class="touch w-20 rounded-base border-theme-500 bg-theme-500 text-xs text-white ring-theme-500"
 							>
 								Button
 							</button>
 						</div>
 					</div>
 				</div>
-				<div class="curve-outer border border-theme-800 bg-theme-950 p-2 pt-5 pr-10">
-					<div class="curve bg-theme-900 p-2 pt-5 pr-10 shadow-xs">
+				<div class="rounded-outer border border-theme-800 bg-theme-950 p-2 pt-5 pr-10">
+					<div class="rounded-base bg-theme-900 p-2 pt-5 pr-10 shadow-xs">
 						<div
-							class="curve-inner flex items-center gap-4 bg-theme-800 p-4 px-6 text-white shadow-xs"
+							class="flex items-center gap-4 rounded-inner bg-theme-800 p-4 px-6 text-white shadow-xs"
 						>
 							<p class="">Dark</p>
 							<button
 								type="button"
-								class="touch curve w-20 border-theme-400 bg-theme-400 text-xs ring-theme-400"
+								class="touch w-20 rounded-base border-theme-400 bg-theme-400 text-xs ring-theme-400"
 							>
 								Button
 							</button>
@@ -124,24 +124,28 @@
 				</p>
 			{/each}
 			<div class="-mx-2 mt-10 flex grid-cols-3 flex-col items-center gap-4 sm:grid">
-				<div class="curve-outer-sm border border-hint p-1 dark:border-theme-900 dark:bg-theme-900">
-					<div class="curve justify-between bg-white p-1 shadow dark:bg-theme-800">
-						<div class="curve-inner-sm border border-hint p-5 dark:border-theme-950">
-							<p>curve, curve-inner-sm, curve-outer-sm</p>
+				<div
+					class="rounded-outer-sm border border-hint p-1 dark:border-theme-900 dark:bg-theme-900"
+				>
+					<div class="justify-between rounded-base bg-white p-1 shadow dark:bg-theme-800">
+						<div class="rounded-inner-sm border border-hint p-5 dark:border-theme-950">
+							<p>rounded-base, rounded-inner-sm, rounded-outer-sm</p>
 						</div>
 					</div>
 				</div>
-				<div class="curve-outer border border-hint p-2 dark:border-theme-900 dark:bg-theme-900">
-					<div class="curve justify-between bg-white p-2 shadow dark:bg-theme-800">
-						<div class="curve-inner border border-hint p-5 dark:border-theme-950">
-							<p>curve, curve-inner, curve-outer</p>
+				<div class="rounded-outer border border-hint p-2 dark:border-theme-900 dark:bg-theme-900">
+					<div class="justify-between rounded-base bg-white p-2 shadow dark:bg-theme-800">
+						<div class="rounded-inner border border-hint p-5 dark:border-theme-950">
+							<p>rounded-base, rounded-inner, rounded-outer</p>
 						</div>
 					</div>
 				</div>
-				<div class="curve-outer-lg border border-hint p-3 dark:border-theme-900 dark:bg-theme-900">
-					<div class="curve justify-between bg-white p-3 shadow dark:bg-theme-800">
-						<div class="curve-inner-lg border border-hint p-5 dark:border-theme-950">
-							<p>curve, curve-inner-lg, curve-outer-lg</p>
+				<div
+					class="rounded-outer-lg border border-hint p-3 dark:border-theme-900 dark:bg-theme-900"
+				>
+					<div class="justify-between rounded-base bg-white p-3 shadow dark:bg-theme-800">
+						<div class="rounded-inner-lg border border-hint p-5 dark:border-theme-950">
+							<p>rounded-base, rounded-inner-lg, rounded-outer-lg</p>
 						</div>
 					</div>
 				</div>
@@ -157,13 +161,13 @@
 				<LoadingRing class="size-6 text-theme-500 dark:text-theme-400" />
 			</div>
 			<div class="mt-6 flex flex-wrap gap-4">
-				<div class="curve pod-sm bg-error-100 dark:bg-error-900">
+				<div class="pod-sm rounded-base bg-error-100 dark:bg-error-900">
 					<p class="text-error-500 dark:text-error-400">✗ Error text</p>
 				</div>
-				<div class="curve pod-sm bg-warn-100 dark:bg-warn-900">
+				<div class="pod-sm rounded-base bg-warn-100 dark:bg-warn-900">
 					<p class="text-warn-500 dark:text-warn-400">⚠ Warn text</p>
 				</div>
-				<div class="curve pod-sm bg-success-100 dark:bg-success-900">
+				<div class="pod-sm rounded-base bg-success-100 dark:bg-success-900">
 					<p class="text-success-500 dark:text-success-400">✓ Success text</p>
 				</div>
 			</div>
@@ -171,41 +175,41 @@
 				<li>
 					<button
 						type="button"
-						class="curve touch border-theme-500 bg-theme-500 text-white ring-theme-500 dark:border-theme-400 dark:bg-theme-400"
+						class="touch rounded-base border-theme-500 bg-theme-500 text-white ring-theme-500 dark:border-theme-400 dark:bg-theme-400"
 					>
 						<p>touch</p>
 					</button>
 				</li>
 				<li>
-					<button type="button" class="curve touch border-theme-500 ring-theme-500">
+					<button type="button" class="touch rounded-base border-theme-500 ring-theme-500">
 						<p>touch</p>
 					</button>
 				</li>
 				<li>
 					<input
 						type="text"
-						class="curve input focus:border-theme-500 focus:ring-theme-500"
+						class="input rounded-base focus:border-theme-500 focus:ring-theme-500"
 						placeholder="Input"
 					/>
 				</li>
 				<li class="no-arrows">
 					<input
 						type="number"
-						class="curve input w-20 text-center focus:border-theme-500 focus:ring-theme-500"
+						class="input w-20 rounded-base text-center focus:border-theme-500 focus:ring-theme-500"
 						placeholder="0"
 					/>
 				</li>
 			</ul>
-			<div class="curve my-4 flex bg-theme-50 shadow dark:bg-theme-800">
+			<div class="my-4 flex rounded-base bg-theme-50 shadow dark:bg-theme-800">
 				<select
-					class="touch curve-l w-40 border-none bg-transparent px-10 ring-theme-500 dark:ring-theme-400"
+					class="touch w-40 rounded-l-base border-none bg-transparent px-10 ring-theme-500 dark:ring-theme-400"
 				>
 					<option>Select</option>
 				</select>
 				<input
 					type="text"
 					placeholder="Input"
-					class="input curve-r grow border-0 border-l border-hint-light text-sm ring-theme-500 dark:border-theme-900 dark:ring-theme-400"
+					class="input grow rounded-r-base border-0 border-l border-hint-light text-sm ring-theme-500 dark:border-theme-900 dark:ring-theme-400"
 				/>
 			</div>
 			<p class="leading-xl mt-6 text-sm">
@@ -217,7 +221,7 @@
 			</p>
 		</div>
 		<div class="page-w my-10">
-			<div class="curve pod bg-accent-100">
+			<div class="pod rounded-base bg-accent-100">
 				<p class="text-lg font-medium text-accent-900">Accent color</p>
 			</div>
 		</div>
