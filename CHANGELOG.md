@@ -1,5 +1,11 @@
 # windweaveui
 
+## 0.4.0
+
+### Minor Changes
+
+- [#25](https://github.com/mitchsaylor/windweaveui/pull/25) [`f6b92a8`](https://github.com/mitchsaylor/windweaveui/commit/f6b92a84cae39227daff9cc23a6d2269ac2a4144) - Breaking: Switch corner radii classes to TailwindCSS variables
+
 ## 0.3.2
 
 ### Patch Changes
