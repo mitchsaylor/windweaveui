@@ -1,5 +1,11 @@
 # windweaveui
 
+## 0.4.1
+
+### Patch Changes
+
+- [#27](https://github.com/mitchsaylor/windweaveui/pull/27) [`265f831`](https://github.com/mitchsaylor/windweaveui/commit/265f831998120e9b15617395637ec03a76f297b0) - Fix: update touch element
+
 ## 0.4.0
 
 ### Minor Changes
